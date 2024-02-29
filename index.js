@@ -8,7 +8,7 @@ const http=require("http")
 const {Server}=require("socket.io")
 const server=http.createServer(app)
 const io=new Server(server,{cors:{
-    origin:"http://localhost:3000",
+    origin:"https://react-simple-chat-app.onrender.com",
     methods:["GET","POST"]
 },
 path: '/socket.io',
